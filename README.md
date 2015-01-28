@@ -1,6 +1,6 @@
 # trypsin
 
-Usage: python trypsin.py [input] [output] [n]
+Usage: python trypsin.py --input input_filename --output output_filename --miss 1
 
 Note:
 
@@ -13,7 +13,7 @@ How to use:
 
 1. Copy your fasta file and this script to same folder.
 2. Open a command terminal and cd to this folder.
-3. Type python trypsin.py input output n
+3. Type: python trypsin.py --input input_filename --output output_filename --miss 1
 
 Three arguments are:
 
