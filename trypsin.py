@@ -38,6 +38,8 @@ def TRYPSIN(proseq,miss_cleavage):
     return peptides
 
 import sys
+import os
+import getopt
 from Bio import SeqIO
 
 ################  Comand-line arguments ################
@@ -48,12 +50,12 @@ else:
     options, remainder = getopt.getopt(sys.argv[1:],'', ['input=',
                                                          'miss=',
                                                          'output='])
-     for opt, arg in options:
-         if opt == '--input': input_file=arg
-         elif opt == '--miss': n=int(arg)  #number of miss cleavage allowed
-         elif opt == '--output':output_file=arg
-         else:
-             print "Warning! Command-line argument: %s not recognized. Exiting..." % opt; sys.exit()
+    for opt, arg in options:
+        if opt == '--input': input_file=arg
+        elif opt == '--miss': n=int(arg)  #number of miss cleavage allowed
+        elif opt == '--output':output_file=arg
+        else:
+            print "Warning! Command-line argument: %s not recognized. Exiting..." % opt; sys.exit()
 
 handle=SeqIO.parse(input_file,'fasta')
 output=open(output_file,'w')
