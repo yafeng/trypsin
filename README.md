@@ -1,4 +1,4 @@
-# trypsin
+# in silico trypsin digestion
 
 Usage: python trypsin.py --input input_filename --output output_filename --miss 1
 
@@ -17,11 +17,11 @@ How to use:
 
 Three arguments are:
 
-input- name of your fasta file which contains protein sequences to be digested
+-input: name of your fasta file which contains protein sequences to be digested
 
-output- output txt file name
+-output output txt file name
 
-n- number of allowed miss cleavage site, choose value from 0, 1, 2.
+-miss: number of allowed miss cleavage site, choose value from 0, 1, 2.
 
 Speed
 
