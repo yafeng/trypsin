@@ -37,7 +37,6 @@ def TRYPSIN(proseq,miss_cleavage):
             peptides.append(proseq[cut_sites[-2]:cut_sites[-1]])
     else: #there is no trypsin site in the protein sequence
         peptides.append(proseq)
-
     return peptides
 
 import sys
